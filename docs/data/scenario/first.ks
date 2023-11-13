@@ -1,46 +1,118 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="うさぎとかめ"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+うさぎとかめ[l][r]
 
-メロスは激怒した。[l][r]
+[bg storage=rabbit.jpg time=500]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+うさぎです。[l][r]
 
-(中略)[l][r]
+バトルしましょう。[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+[cm]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+うさぎが現れた！[l][r]
+
+*1
+
+かめはどうする？[l][r]
+
+[link target=*a] →殻にこもる [endlink][r]
+[link target=*b] →助けを呼ぶ [endlink][r]
+[link target=*c] →逃げる [endlink][r]
 [s]
 
-*tag_sleep
-
+*a
+殻にこもった！[l][r]
+しかし何も起こらなかった。[l][r]
+うさぎの攻撃！[l][r]
+攻撃を耐えることができた。[l][r]
 [cm]
+[jump target=*2]
 
-[bg storage=sleep.jpg time=500]
-
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
-
-【 BAD END 】[l][cm]
-
+*b
+助けを呼んだ！[l][r]
+しかし何も起こらなかった。[l][r]
+うさぎの攻撃！[l][r]
+やられてしまった。[l][r]
+[bg storage=kawa.jpg time=500]
+かめは住処を奪われ、世界で孤立した。[l][r]
+【 BAD END 】[l][r]
+[cm]
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
-
+*c
+逃げた！[l][r]
+[bg storage=kawa.jpg time=500]
+かめは住処を奪われ、世界で孤立した。[l][r]
+【 BAD END 】】[l][r]
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+[jump target=*start]
 
-【 GOOD END 】[l][cm]
 
+
+*2
+
+かめはどうする？[l][r]
+
+[link target=*d] →殻にこもる [endlink][r]
+[link target=*e] →助けを呼ぶ [endlink][r]
+[link target=*f] →逃げる [endlink][r]
+[s]
+
+*d
+殻にこもった！[l][r]
+しかし何も起こらなかった。[l][r]
+うさぎの攻撃！[l][r]
+やられてしまった。[l][r]
+[bg storage=kawa.jpg time=500]
+かめは住処を奪われ、世界で孤立した。[l][r]
+【 BAD END 】[l][r]
+[cm]
+[jump target=*start]
+
+*e
+助けを呼んだ！[l][r]
+鷹が現れた。[l][r]
+[cm]
+[jump target=*3]
+
+*f
+逃げた！[l][r]
+[bg storage=kawa.jpg time=500]
+かめは住処を奪われ、世界で孤立した。[l][r]
+【 BAD END 】[l][r]
+[cm]
+[jump target=*start]
+
+
+
+*3
+
+[bg storage=taka.jpg time=500]
+
+鷹はどうする？[l][r]
+
+[link target=*g] →うさぎを掴む [endlink][r]
+[link target=*h] →かめを掴む [endlink][r]
+[s]
+
+*g
+うさぎを掴んだ！[l][r]
+[bg storage=park.jpg time=500]
+かめは住処を奪われずに済んだ。[l][r]
+【 GOOD END 】[l][r]
+[cm]
+[jump target=*start]
+
+*h
+かめを掴んだ！[l][r]
+[bg storage=kawa.jpg time=500]
+かめは住処を奪われ、世界で孤立した。[l][r]
+【 BAD END 】[l][r]
+[cm]
 [jump target=*start]
